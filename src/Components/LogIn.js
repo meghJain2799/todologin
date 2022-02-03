@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,6 +40,7 @@ const LogIn = () => {
         <input type="password" className='px-3 loginput' placeholder="Password" name='password' id="pass" onChange={handleChange} />
       </div>
       <button type="button" className="btn btn-primary logbutton px-3 text-white nav-item m-2" onClick={LogUser}>Log In</button>
+      <Link className='linkSign' to="/">sign up</Link>
      </div>
        
 
